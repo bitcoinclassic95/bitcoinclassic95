@@ -33,7 +33,7 @@ public:
         strNetworkID = "main";
         consensus.nSubsidyHalvingInterval = 210000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
-        consensus.nMajorityRejectBlockOutdated = 950;
+        consensus.nMajorityRejectBlockOutdated = 1050;
         consensus.nMajorityWindow = 1000;
         consensus.powLimit = uint256S("00000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 14 * 24 * 60 * 60; // two weeks
@@ -56,7 +56,7 @@ public:
 
         // Timestamps for forking consensus rule changes:
         // Allow bigger blocks if:
-        consensus.nActivateSizeForkMajority = 950; // 95% of blocks out of the last 1000 blocks
+        consensus.nActivateSizeForkMajority = 1050; // 105% of blocks out of the last 1000 blocks , for real consensus!
         consensus.nSizeForkGracePeriod = 60*60*24*28; // four week grace period after activation
         consensus.nSizeForkExpiration = 1514764800; // 2018-01-01 00:00:00 GMT
 
